@@ -14,12 +14,6 @@ export default defineManifest({
     48: 'img/logo-48.png',
     128: 'img/logo-128.png',
   },
-  action: {
-    default_popup: 'popup.html',
-    default_icon: 'img/logo-48.png',
-  },
-  options_page: 'options.html',
-  devtools_page: 'devtools.html',
   background: {
     service_worker: 'src/background/index.js'
    // type: 'module',
@@ -30,9 +24,6 @@ export default defineManifest({
       js: ['src/contentScript/index.js'],
     },
   ],
-  side_panel: {
-    default_path: 'sidepanel.html',
-  },
   web_accessible_resources: [
     {
       resources: ['img/logo-16.png', 'img/logo-32.png', 'img/logo-48.png', 'img/logo-128.png'],
@@ -41,7 +32,4 @@ export default defineManifest({
   ],
   permissions: ['sidePanel', 'storage', 'notifications'],
   host_permissions: ["*://*.olx.com.br/*"],
-  chrome_url_overrides: {
-    newtab: 'newtab.html',
-  },
 })
