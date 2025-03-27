@@ -21,3 +21,10 @@
 
 # secrets
 secrets.*.js
+src/zip.js
+CHANGELOG.md
+.editorconfig
+.npmignore
+.prettierignore
+.prettierrc
+LICENSE
